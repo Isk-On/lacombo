@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/contacts.css" />
+    <title>Our Contacts</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-nav">
+        <h1>ЛАКОМБО</h1>
+        <nav>
+          <ol>
+            <li>
+              <a href="../index.html"
+                >рыболовство научный подход водная жизнь</a
+              >
+            </li>
+            <li>
+              <a href="../html/about.html">Abous us</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="contacts.html"><span>Contacts</span></a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="header-intro">
+        <h1>
+          Научный подход к исследованию водной жизни и устойчивому рыболовству
+        </h1>
+      </div>
+    </header>
+
+    <div class="contacts-card">
+      <h1>СВЯЖИТЕСЬ С НАМИ</h1>
+
+      <div class="cards">
+        <div class="card">
+          <img src="../images/icons/location.png" alt="" />
+          <h3>Адрес:</h3>
+          <p>Научный центр Лакомбо ул. Научная, 12 Москва Россия</p>
+        </div>
+        <div class="card">
+          <img src="../images/icons/email.png" alt="" />
+          <h3>Email:</h3>
+          <p>info@lakombo.ru</p>
+        </div>
+        <div class="card">
+          <img src="../images/icons/phone.png" alt="" />
+          <h3>Телефон:</h3>
+          <p>+7 495 123 4567</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="form-container">
+      <p class="form-description">
+        Представляем вашему вниманию описание наших исследований в области
+        аквакультуры и устойчивого рыболовства. Узнайте о наших уникальных
+        методах и подходах, которые помогут сохранить водные экосистемы и
+        обеспечить устойчивое использование водных ресурсов.
+      </p>
+      <label class="form-label"
+        >Name *
+        <input type="text" class="form-input" required />
+      </label>
+      <label class="form-label"
+        >Email *
+        <input type="email" class="form-input" required />
+      </label>
+      <label class="form-label"
+        >Address *
+        <input type="text" class="form-input" required />
+      </label>
+      <label class="form-label"
+        >How did you find us? *
+        <select class="form-input" required>
+          <option value="">-- Select an option --</option>
+          <option value="search">Search Engine</option>
+          <option value="social">Social Media</option>
+          <option value="friend">Friend</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <label class="form-label"
+        >Message *
+        <textarea class="form-textarea" required></textarea>
+      </label>
+      <div class="form-checkbox-group">
+        <label><input type="checkbox" /> I want to receive newsletters</label>
+        <label
+          ><input type="checkbox" required /> I agree to the Terms and
+          Conditions *</label
+        >
+      </div>
+      <button type="submit" class="form-button">Submit</button>
+    </form>
+  </body>
+</html>

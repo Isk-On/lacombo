@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url(../images/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .header-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 60%;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+
+    text-align: center;
+
+    font-size: 2em;
+  }
+
+  .logo-nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+    width: 95%;
+    margin: 0 auto;
+
+    height: 150px;
+    h1 {
+      font-size: 3em;
+      font-weight: 600;
+      color: #1cde7d;
+    }
+    nav {
+      ol {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        list-style: none;
+        li a {
+          color: white;
+          text-decoration: none;
+
+          font-size: 1.4em;
+
+          span {
+            background-color: white;
+
+            color: black;
+            padding: 10px;
+          }
+        }
+
+        li:hover {
+          a {
+            background-color: white;
+            padding: 10px 0px;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  margin-top: 100px;
+
+  width: 100%;
+  padding: 50px 0px;
+
+  h1 {
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+
+    max-width: 80%;
+
+    .card {
+      display: flex;
+      align-items: center;   
+      flex-direction: column;
+      gap: 14px;
+
+      padding: 25px 0px;
+
+      border: 1px solid #cacaca;
+      border-radius: 15px;
+      width: 400px;
+
+      img {
+        max-width: 90%;
+
+        border-radius: 15px;
+      }
+
+      p{
+        max-width: 90%;
+        font-size: 1.3em;
+        color: #333;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  header {
+    height: 70vh;
+
+    nav li a {
+      font-size: 0.8em !important;
+    }
+
+    h1 {
+      font-size: 1em;
+    }
+  }
+}
